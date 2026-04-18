@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,144,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-display {
+  font-family: "Bodoni Moda", serif;
+  
+  /* THE SECRET TRICK: Forces maximum hairline contrast */
+  font-optical-sizing: none; 
+  font-variation-settings: "opsz" 144; 
+  
+  /* Forces the browser to draw the thin lines as sharply as possible */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
